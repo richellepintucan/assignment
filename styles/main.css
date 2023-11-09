@@ -10,21 +10,24 @@
 }
 
 body {
-    background-color: #495250;    
- 
- }
+    background-color: #495250;
+}
 
 #title {
     color: red;
     text-align: center;
 }
 
-#Clear1, #Clear2 {
-    color: red
+#Clear1,
+#Clear2 {
+    color: red;
 }
 
-#div, #mul, #sub, #add {
-    color: orange
+#div,
+#mul,
+#sub,
+#add {
+    color: orange;
 }
 
 .container {
@@ -32,7 +35,6 @@ body {
     width: 400px;
     height: 450px;
     background-color: black;
-
 }
 
 .container input[type='text'] {
@@ -48,22 +50,17 @@ body {
     display: flex;
     margin: auto;
     border-radius: 6px;
-    color: black;   
+    color: black;
 }
 
 .display {
     background-color: purple;
-    
 }
 
 /* Media Queries*/
 
-@media screen and (max-width: 768px){
-        body {
-          color: #495250;
-        }
-      }
-    
-
-
-
+@media screen and (max-width: 768px) {
+    body {
+        color: #495250;
+    }
+}
