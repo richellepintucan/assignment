@@ -19,18 +19,6 @@ body {
     text-align: center;
 }
 
-#Clear1,
-#Clear2 {
-    color: red;
-}
-
-#div,
-#mul,
-#sub,
-#add,
-#equal {
-    color: green;
-}
 
 .container{
     width: 100%;
@@ -40,6 +28,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .calculator{
     background: #3a4452;
     padding: 20px;
@@ -59,23 +48,25 @@ body {
     margin: 10px;
 }
 
-.buttons {
-  font-size: 2rem;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0px;
-}
-
 form .display{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
 }
+
 form .display input{
     text-align: right;
     flex: 1;
     font-size: 45px;
     box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+form input.operator{
+    color: orangered;
 }
 
 
