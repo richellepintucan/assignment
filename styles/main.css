@@ -8,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ 
 body {
     height: 100vh;
     display: flex;
@@ -16,10 +16,6 @@ body {
     justify-content: center;
     background: #e0e3eb;
   }
-
-  #title {
-    color: red;    
-}
 
   .container {
     position: relative;
