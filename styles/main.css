@@ -18,11 +18,9 @@ body {
   }
 
   #title {
-    color: red;
-    float: 0;
-   
-    
+    color: red;    
 }
+
   .container {
     position: relative;
     max-width: 300px;
