@@ -2,22 +2,33 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
+
+/* box-sizing property set to border-box, this makes sure that the
+padding and border are included in the total width and height of the elements */
 *,
 *::before,
 *::after {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- 
+
+#title {
+  color: red;
+  position: absolute;
+  top: 50px;
+
+}
+
 body {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e0e3eb;
+  background-color: #e0e3eb;
 }
+
 .container {
   position: relative;
   max-width: 300px;
@@ -27,6 +38,7 @@ body {
   background: #3a4452;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
+
 .display {
   height: 80px;
   width: 100%;
@@ -38,11 +50,13 @@ body {
   color: #000e1a;
   pointer-events: none;
 }
+
 .buttons {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .buttons button {
   padding: 10px;
   border-radius: 6px;
@@ -51,18 +65,29 @@ body {
   cursor: pointer;
   background-color: #eee;
 }
+
 .buttons button:active {
   transform: scale(0.99);
 }
+
 .operator {
   color: orangered;
 }
 
 
-/* Media Query*/
+/* Media Queries*/
 
-@media screen and (max-width: 768px) {
-    .container{
-        background: #3a4452;
-    }
+
+@media only screen and (max-width: 600px) {
+  /*When the width of this assignment document is 600 pixels or less, the background-color is "black", otherwise it is "#e0e3eb". */
+  body {
+    background-color: black;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of buttons to 30px */
+@media only screen and (max-width: 600px) {
+  .buttons button {
+    font-size: 30px;
+  }
 }
