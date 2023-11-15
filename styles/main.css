@@ -78,8 +78,8 @@ body {
 /* Media Queries*/
 
 
-@media only screen and (max-width: 600px) {
-  /*When the width of this assignment document is 600 pixels or less, the background-color is "black", otherwise it is "#e0e3eb". */
+@media screen and (max-width: 768px) {
+  /*When the width of this assignment document is 768 pixels or more, the background-color is "black", otherwise it is "#e0e3eb". */
   body {
     background-color: black;
   }
