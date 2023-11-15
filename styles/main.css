@@ -5,6 +5,7 @@
 
 /* box-sizing property set to border-box, this makes sure that the
 padding and border are included in the total width and height of the elements */
+
 *,
 *::before,
 *::after {
@@ -76,7 +77,6 @@ body {
 
 
 /* Media Queries*/
-
 
 @media screen and (max-width: 768px) {
   /*When the width of this assignment document is 768 pixels or more, the background-color is "black", otherwise it is "#e0e3eb". */
